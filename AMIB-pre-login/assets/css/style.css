@@ -3204,7 +3204,7 @@ p {
 
 .single-features {
   padding: 20px 0 25px;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
 .service1 {
@@ -3264,10 +3264,10 @@ p {
 .single-features .features-content .text {
   font-size: 20px;
   font-weight: 800;
-  text-align: center;
-  line-height: 30px;
-  color: #121212;
-  margin-top: 16px;
+  line-height: 25px;
+  color: #fff;
+  margin-top: -85px;
+  margin-left: 10px;
 }
 .single-features .features-content .features-btn {
   color: #0067f4;
@@ -3564,6 +3564,7 @@ p {
   content: "\ea58";
   font-family: "LineIcons";
   position: absolute;
+  background-image: url("../images/ourpartners/arabia.png");
   top: 50%;
   right: 0;
   -webkit-transform: translateY(-50%);
@@ -4341,16 +4342,13 @@ p.form-message.error.form-message.error {
   margin-top: 0rem;
 }
 
-.owl-theme .owl-dots .owl-dot span {
-}
-
 .owl-carousel .item img {
   width: 70% !important;
 }
 
-.nation-takaful {
+/* .nation-takaful {
   margin-top: 70px;
-}
+} */
 
 /* Niraj Changes */
 
@@ -4533,7 +4531,7 @@ a.button {
 
 .request-call .lni-whatsapp {
   margin-top: 10px;
-  font-size: 30px;
+  width: 30px;
 }
 
 input[type="date"] {
@@ -4566,4 +4564,103 @@ input[type="date"]:before {
   top: 12px;
   right: 6px;
   color: #999;
+}
+
+/* About Us */
+/* .desired-insurance {
+  background: linear-gradient(to bottom, white, white, #beffd4, #beffd4, #beffd4, #beffd4, #beffd4);
+} */
+
+/* .desired-insurance {
+  content: "";
+  position: absolute;
+  background: linear-gradient(0deg, rgba(39, 38, 42, 1) 0%, rgba(255, 255, 255, 0) 60%);
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-image: url("../images/slider/services-1.png");
+} */
+
+.almulla-insure {
+  color: #013f16;
+  font-family: "SourceSansPro-Black";
+  font-weight: bold;
+}
+
+.brokarage {
+  color: #013f16 !important;
+  font-family: "SourceSansPro-Light";
+}
+
+.vision {
+  font-weight: bold !important;
+  text-align: left;
+  font-family: "SourceSansPro-Black";
+}
+
+/* Our-Partners */
+.Our-partner {
+  font-weight: bold;
+}
+
+.about-us {
+  border-radius: 20px;
+  max-width: 90%;
+  /* box-shadow: 0 10px 10px -5px; */
+  background: none;
+}
+
+.advisor p {
+  margin-top: -60px !important;
+}
+
+.about-accordion {
+  display: flex;
+}
+
+.card-header {
+  display: flex;
+}
+
+.img2 {
+  margin: auto;
+  width: 90%;
+}
+
+.img5 {
+  margin: auto;
+  width: 90%;
+}
+
+.img7 {
+  margin: auto;
+  width: 90%;
+}
+
+.img8 {
+  margin: auto;
+  width: 90%;
+}
+
+#myimg1 {
+  width: 50px;
+}
+
+#myimg2 {
+  width: 50px;
+}
+
+.use-application {
+  margin: auto;
+  margin-left: 10px;
+}
+
+.img2 {
+  width: 25px;
+  position: absolute;
+  left: 440px;
+  top: 50px;
+  cursor: pointer;
 }
