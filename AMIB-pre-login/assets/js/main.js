@@ -44,6 +44,10 @@ $(function () {
     return false
   })
 
+  $(".plus").click(function () {
+    $(this).toggleClass("minus")
+  })
+
   //===== close navbar-collapse when a  clicked
 
   $(".navbar-nav a").on("click", function () {

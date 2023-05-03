@@ -127,6 +127,7 @@ p {
   font-size: 44px;
   font-weight: 100;
   color: #121212;
+  padding-top: 90px;
   line-height: 55px;
 }
 
@@ -4332,6 +4333,11 @@ p.form-message.error.form-message.error {
   z-index: 1;
 }
 
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #00aa3b !important;
+}
+
 .owl-carousel .item {
   height: 10rem;
   padding: 1rem;
@@ -4343,7 +4349,8 @@ p.form-message.error.form-message.error {
 }
 
 .owl-carousel .item img {
-  width: 70% !important;
+  width: 80% !important;
+  margin-top: -20px;
 }
 
 /* .nation-takaful {
@@ -4566,6 +4573,11 @@ input[type="date"]:before {
   color: #999;
 }
 
+/* Our-Partners */
+.Our-partner {
+  font-weight: bold;
+}
+
 /* About Us */
 /* .desired-insurance {
   background: linear-gradient(to bottom, white, white, #beffd4, #beffd4, #beffd4, #beffd4, #beffd4);
@@ -4582,6 +4594,10 @@ input[type="date"]:before {
   left: 0;
   background-image: url("../images/slider/services-1.png");
 } */
+
+.why-almulla {
+  margin-top: -40px;
+}
 
 .almulla-insure {
   color: #013f16;
@@ -4600,16 +4616,131 @@ input[type="date"]:before {
   font-family: "SourceSansPro-Black";
 }
 
-/* Our-Partners */
-.Our-partner {
-  font-weight: bold;
-}
-
 .about-us {
   border-radius: 20px;
   max-width: 90%;
   /* box-shadow: 0 10px 10px -5px; */
   background: none;
+}
+/* 
+.text-insure {
+  background-color: #00af3c;
+  height: 150px;
+  border-radius: 20px;
+  color: #ffffff;
+  font-family: SourceSansPro-SemiboldIt;
+  width: 65%;
+  font-size: 25px;
+  text-align: left;
+  margin-top: -18px;
+  padding-top: 35px;
+  margin-left: 50px;
+  padding-left: 40px;
+} */
+
+.competative-price {
+  position: absolute;
+  top: 30px;
+  text-align: left;
+  box-shadow: 6px 0 8px 0px #4545;
+  margin-left: 340px;
+  background-color: #006924;
+  height: 150px;
+  border-radius: 20px;
+  padding-left: 40px;
+  padding-top: 25px;
+  /* color: #ffffff; */
+  width: 65%;
+}
+
+.text-insure-competative {
+  color: #ffffff;
+  line-height: 25px;
+  font-size: 25px;
+  font-family: SourceSansPro-SemiboldIt;
+}
+
+.insure-insurance {
+  max-width: 65%;
+  box-shadow: 6px 0 8px 0px #4545;
+  margin-left: 50px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.easy-insurance-provider {
+  box-shadow: 0 10px 15px #454545;
+  background-color: #00af3c;
+  height: 150px;
+  border-radius: 20px;
+  width: 65%;
+  text-align: left;
+  margin-top: -18px;
+  padding-top: 35px;
+  margin-left: 50px;
+  padding-left: 40px;
+}
+
+.text-insure {
+  font-size: 25px;
+  color: #ffffff;
+  line-height: 25px;
+  font-family: SourceSansPro-SemiboldIt;
+}
+
+.client {
+  width: 65%;
+  box-shadow: 6px 0 8px 0px #4545;
+  margin-left: 340px;
+  margin-top: -95px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.client-requirement {
+  box-shadow: 0 10px 15px #454545;
+  background-color: #00290e;
+  height: 180px;
+  border-radius: 20px;
+  width: 65%;
+  text-align: left;
+  margin-top: -18px;
+  padding-top: 35px;
+  margin-left: 340px;
+  padding-left: 40px;
+}
+
+.fast-insurance {
+  box-shadow: 0 10px 15px #454545;
+  background-color: #000000;
+  height: 350px;
+  border-radius: 20px;
+  width: 80%;
+  text-align: left;
+  position: absolute;
+  top: 25px;
+  /* margin-top: -435px; */
+  padding-top: 15px;
+  margin-left: 650px;
+  padding-left: 22px;
+}
+
+.fast {
+  width: 80%;
+  box-shadow: 6px 0 8px 0px #4545;
+  margin-left: 650px;
+  /* margin-top: -95px; */
+  position: absolute;
+  top: 325px;
+  border-bottom-right-radius: 25px;
+}
+
+.easy-insurance {
+  width: 25%;
+  margin-left: 65px;
+}
+.easy-insure {
+  display: flex;
 }
 
 .advisor p {
@@ -4654,9 +4785,22 @@ input[type="date"]:before {
 
 .use-application {
   margin: auto;
-  margin-left: 10px;
+  margin-left: 0px;
 }
 
+.faq {
+  background-image: url("../images/faq_background.png");
+}
+
+/* .plus {
+  background-image: url("../images/noun_add_1075139_copy.png");
+  background-repeat: no-repeat;
+}
+
+.plus.minus {
+  background-image: url("../images/noun_add_1075139_copy_5.png");
+  background-repeat: no-repeat;
+} */
 .img2 {
   width: 25px;
   position: absolute;
