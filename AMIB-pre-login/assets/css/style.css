@@ -2826,7 +2826,7 @@ p {
 }
 
 .navbar-area .navbar .navbar-nav .nav-item a {
-  font-size: 13px;
+  font-size: 15px;
   line-height: 24px;
   font-weight: 700;
   padding: 26px 0;
@@ -3726,6 +3726,7 @@ p {
   color: #121212;
   padding-bottom: 25px;
 }
+
 @media (max-width: 767px) {
   .single-testimonial .testimonial-text .text {
     font-size: 18px;
@@ -3819,6 +3820,7 @@ p {
 
 .team-style-eleven:hover {
   background-color: #00aa3b;
+  color: #ffffff;
 }
 .team-style-eleven .team-image img {
 }
@@ -3923,6 +3925,11 @@ p {
     font-size: 14px;
   }
 }
+
+.team-style-eleven .team-content {
+  text-align: left !important;
+  padding-left: 10px;
+}
 .team-style-eleven:hover .team-content {
   padding-top: 50px;
 }
@@ -3953,7 +3960,9 @@ p {
   padding-top: 120px;
   padding-bottom: 130px;
   background-color: #004513;
+  background-image: url("../images/contact_us.png");
   color: white;
+  height: 125vh;
 }
 
 p.form-message.success,
@@ -4021,6 +4030,33 @@ p.form-message.error.form-message.error {
 }
 .contact-wrapper .contact-title span {
   font-weight: 400;
+}
+
+.contact-logo {
+  width: 6%;
+  position: relative;
+  left: 850px;
+  margin-top: -5px;
+}
+
+.contact-us-copyright {
+  position: absolute;
+  margin-top: 280px;
+}
+
+.copyright {
+  color: #ffffff;
+  clear: both;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  right: 275px;
+
+  font-family: "Source Sans Pro", sans-serif;
+}
+.contact-img {
+  position: absolute;
 }
 
 /*===========================
@@ -4093,7 +4129,7 @@ p.form-message.error.form-message.error {
   color: #121212;
 }
 .footer-area.footer-dark {
-  background-color: #121212;
+  background-color: #004513;
 }
 .footer-area.footer-dark .social li a {
   color: #fff;
@@ -4120,7 +4156,7 @@ p.form-message.error.form-message.error {
   color: #fff;
   position: fixed;
   right: 20px;
-  bottom: 20px;
+  bottom: 50px;
   width: 45px;
   height: 45px;
   line-height: 45px;
@@ -4183,7 +4219,7 @@ p.form-message.error.form-message.error {
   left: 95%;
 }
 .slider__control:hover {
-  background-color: #2da6ff;
+  background-color: #00aa3b;
 }
 .slider__control-line {
   position: absolute;
@@ -4325,6 +4361,7 @@ p.form-message.error.form-message.error {
 .slide__heading {
   margin-bottom: 20px;
   font-size: 50px;
+  line-height: 50px;
   color: #06a33d;
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -4808,7 +4845,7 @@ input[type="date"]:before {
   width: 90%;
 }
 
-.img5 {
+.img5 .img2 {
   margin: auto;
   width: 90%;
 }
@@ -4877,12 +4914,31 @@ input[type="date"]:before {
 .testimonial-text {
   font-family: Georgia, serif;
   font-style: italic;
+  text-align: left;
 }
 
 /* Contact-us */
 
+.contact-container {
+  margin-top: 100px;
+  background-image: url("../images/contact_us.png");
+}
+
+.follow-us {
+  position: absolute;
+  position: absolute;
+  color: #ffffff;
+  margin-left: 790px;
+  font-size: 10px;
+  clear: both;
+  opacity: 0.5;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .location {
-  max-width: 250%;
+  /* max-width: 250%; */
   position: absolute;
   margin-top: -105px;
   margin-left: -180px;
@@ -5006,4 +5062,8 @@ input[type="date"]:before {
 
 .product-service-container {
   margin-top: -90px;
+}
+
+.up-arrow {
+  display: inline-block;
 }

@@ -1,5 +1,5 @@
 $(function () {
-  "use strict"
+  ;("use strict")
 
   //===== Prealoder
 
@@ -44,8 +44,30 @@ $(function () {
     return false
   })
 
-  $(".plus").click(function () {
-    $(this).toggleClass("minus")
+  //For Faq Plus Minus image
+
+  // function changeImage() {
+  //   var img = document.getElementsByClassName("minus_plus")
+  //   var src = img.getAttribute("src")
+  //   if (src == "assets/images/amib_plus.png") {
+  //     img.setAttribute("src", "assets/images/amib_minus.png")
+  //   } else {
+  //     img.setAttribute("src", "assets/images/amib_plus.png")
+  //   }
+  // }
+
+  // window.onload = function () {
+  //   var img = document.getElementsByClassName("minus_plus")
+  //   img.addEventListener("click", changeImage)
+  // }
+
+  $(".minus_plus").on("click", function () {
+    $(".minus_plus ").attr("src", "assets/images/amib_plus.png")
+    if ($(this).attr("class") == "img2 minus_plus collapsed") {
+      $(this).attr("src", "assets/images/amib_minus.png")
+    } else {
+      $(this).attr("src", "assets/images/amib_plus.png")
+    }
   })
 
   //===== close navbar-collapse when a  clicked
