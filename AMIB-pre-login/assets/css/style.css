@@ -137,12 +137,12 @@ p {
   color: #121212;
   padding-top: 90px;
   line-height: 55px;
-  font-family: "Source Sans Pro", sans-serif;
 }
 
 .easy-steps {
   font-weight: 600;
   color: #121212;
+  font-family: "Source Sans Pro-black", sans-serif;
 }
 @media (max-width: 767px) {
   .section-title .title {
@@ -155,6 +155,7 @@ p {
   line-height: 24px;
   color: #6c6c6c;
   margin-top: 24px;
+  font-family: "Source Sans Pro-semisolid", sans-serif;
 }
 
 /*===== All Preloader Style =====*/
@@ -730,7 +731,7 @@ p {
   border-color: #00aa3b;
 }
 .light-rounded-buttons .light-rounded-two:hover {
-  color: #00aa3b;
+  color: #ffffff;
   background-color: transparent;
 }
 .light-rounded-buttons .light-rounded-three {
@@ -2518,7 +2519,7 @@ p {
 }
 .form-input .input-items input,
 .form-input .input-items textarea {
-  width: 100%;
+  width: 80%;
   height: 44px;
   border: 2px solid;
   padding-left: 44px;
@@ -3464,6 +3465,16 @@ p {
   overflow: hidden;
   /* background-color: white; */
 }
+
+.news-feed {
+  font-weight: 100;
+  display: contents;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.news-section {
+  font-family: "Source Sans Pro-bold", sans-serif;
+}
 .pricing-style .pricing-icon img {
   width: 300px;
 }
@@ -3556,7 +3567,7 @@ p {
 
 .about-area .img-fluid {
   position: absolute;
-  margin-top: 550px;
+  margin-top: 258px;
   opacity: 0.7;
 }
 .about-area .about-title .sub-title {
@@ -3994,7 +4005,39 @@ p {
   background-color: #004513;
   background-image: url("../images/contact_us.png");
   color: white;
-  height: 125vh;
+  height: 730px;
+}
+
+#contact-us-form {
+  margin-left: -145px;
+  margin-top: -150px;
+}
+
+#contact-us-form p {
+  color: #ffffff !important;
+  font-size: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+}
+
+.contact-form {
+  margin-left: 600px;
+  margin-top: -350px;
+}
+
+#need-help {
+  color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.client-say {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.fill-form {
+  font-weight: 100;
+  display: contents;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 p.form-message.success,
@@ -4073,7 +4116,7 @@ p.form-message.error.form-message.error {
 
 .contact-us-copyright {
   position: absolute;
-  margin-top: 280px;
+  margin-top: 100px;
 }
 
 .copyright {
@@ -4083,9 +4126,9 @@ p.form-message.error.form-message.error {
   overflow: hidden;
   white-space: nowrap;
   position: absolute;
-  right: 275px;
+  right: 260px;
 
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro-regular", sans-serif;
 }
 .contact-img {
   position: absolute;
@@ -4705,7 +4748,8 @@ input[type="date"]:before {
 
 /* Our-Partners */
 .Our-partner {
-  font-weight: bold;
+  font-weight: 100;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .our-partner-container {
@@ -4735,8 +4779,13 @@ input[type="date"]:before {
 
 .almulla-insure {
   color: #013f16;
-  font-family: "SourceSansPro-Black";
+  font-family: "SourceSansPro-light";
   font-weight: bold;
+}
+
+.insurance-brokarage {
+  font-weight: 100;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .brokarage {
@@ -5004,6 +5053,7 @@ input[type="date"]:before {
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
+  font-family: "Source Sans Pro-regular", sans-serif;
 }
 
 .location {
@@ -5060,7 +5110,7 @@ input[type="date"]:before {
 }
 
 .loaction {
-  margin-left: 250px;
+  margin-top: 280px;
 }
 
 .location-text {
