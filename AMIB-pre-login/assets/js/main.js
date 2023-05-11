@@ -59,6 +59,11 @@ $(function () {
     return false
   })
 
+  $("#button_call").click(function () {
+    $("#box form").toggle("slow")
+    return false
+  })
+
   //For Faq Plus Minus image
 
   // function changeImage() {
