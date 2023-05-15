@@ -155,7 +155,7 @@
               <div id="box">
                 <form action="" id="form">
                   <div>
-                    <p><input type="date" placeholder="username" /></p>
+                    <p><input class="date" type="date" placeholder="username" /></p>
                   </div>
                   <div class="searchbox-wrap">
                     <input type="text" placeholder="Please Enter Number" />
@@ -173,16 +173,13 @@
           <div class="slide">
             <div class="slide__inner">
               <div class="slide__content">
-                <h2 class="slide__heading">
-                  <b class="insure-policy">Awards & </b> <br />
-                  Recongnisation
-                </h2>
+                <!-- <b class="insure-policy"> <h2 class="slide__heading">Awards & Recongnisation</h2> </b> -->
                 <!-- <p class="slide__text">Greetings, Traveler!</p> -->
               </div>
               <div id="box">
                 <form action="" id="form">
                   <div>
-                    <p><input type="date" placeholder="username" /></p>
+                    <p><input class="date" type="date" placeholder="username" /></p>
                   </div>
                   <div class="searchbox-wrap">
                     <input type="text" placeholder="Please Enter Number" />
@@ -196,27 +193,31 @@
               </div>
             </div>
           </div>
-          <div class="slide">
-            <div class="slide__inner">
-              <div class="slide__content">
-                <h2 class="slide__heading">Very Stylish Effect!</h2>
-                <p class="slide__text">It looks cool, isn't it?</p>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="slide__inner">
-              <div class="slide__content">
-                <h2 class="slide__heading">Limited browser support</h2>
-                <p class="slide__text">Forget about IE/Edge and FF</p>
-              </div>
-            </div>
-          </div>
+
           <div class="slide s--prev">
-            <div class="slide__inner">
+            <div class="slide__inner" id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
               <div class="slide__content">
-                <h2 class="slide__heading">Check my other stuff!</h2>
-                <p class="slide__text"><a href="https://codepen.io/suez/pens/public/" target="_blank">Other demos</a> and <a href="https://twitter.com/NikolayTalanov" target="_blank">Twitter</a></p>
+                <h2 class="slide__heading">
+                  <b class="insure-policy">Insure your</b> <br />
+                  Future <br />
+                  Today!
+                </h2>
+                <!-- <p class="slide__text">Greetings, Traveler!</p> -->
+              </div>
+              <div id="box">
+                <form action="" id="form">
+                  <div>
+                    <p><input class="date" type="date" placeholder="username" /></p>
+                  </div>
+                  <div class="searchbox-wrap">
+                    <input type="text" placeholder="Please Enter Number" />
+                    <button><img src="assets/images/submit.png" alt="" /></button>
+                  </div>
+                </form>
+                <button id="button" class="request-call"><img class="lni-whatsapp" src="assets/images/call.png" alt="" /><img class="request" src="assets/images/group_3_copy_4.png" alt="" /></button>
+                <div class="quotes-request">
+                  <button type="button" class="btn btn-light">Request a Quotes</button>
+                </div>
               </div>
             </div>
           </div>
@@ -414,12 +415,11 @@
             </div>
 
             <div class="section-title text-center pb-10 d-flex justify-content-center mobile-features">
-              <img class="img-fluid iphone_img" src="assets/images/App-features/App_features.png" alt="img" />
-
               <div class="mobile_wrap">
                 <iframe class="app-featur-frame" src="assets/app-features/app-features.html" width="500" height="900" frameborder="0"> </iframe>
               </div>
             </div>
+
             <!-- section title -->
           </div>
         </div>
@@ -445,9 +445,7 @@
     <section id="testimonial" class="testimonial-area">
       <div class="container">
         <div class="row justify-content-between">
-          <div class="col-xl-6">
-            <div class="youtube-wrapper"><iframe class="youtube-wrapper" width="560" height="382" src="https://www.youtube-nocookie.com/embed/7NbztAOc2Ig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-          </div>
+          <div class="youtube-wrapper"><iframe class="youtube-wrapper" width="560" height="382" src="https://www.youtube-nocookie.com/embed/7NbztAOc2Ig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
           <!-- testimonial left content -->
 
           <div class="col-lg-6">
@@ -777,8 +775,8 @@
                 <div class="col-md-12">
                   <div class="form-input mt-25">
                     <div class="input-items default">
-                      <input type="email" name="email" placeholder="Email" />
-                      <i class="lni lni-envelope"></i>
+                      <input type="tel" name="email" placeholder="Phone Number" />
+                      <i class="lni lni-phone"></i>
                     </div>
                   </div>
                   <!-- form input -->
@@ -885,5 +883,13 @@
     <script>
       $.fn.cycle.defaults.autoSelector = ".slideshow"
     </script>
+    <script type="text/javascript">
+      // remove parameter from address bar immediately if no changes
+      let url = new URL(window.location.href)
+      url.searchParams.delete("hc")
+      url.searchParams.delete("ap")
+      window.history.replaceState({}, document.title, url.toString())
+    </script>
+    <script type="text/javascript"></script>
   </body>
 </html>

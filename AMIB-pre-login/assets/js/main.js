@@ -52,6 +52,9 @@ $(function () {
     })
   })
 
+  //for request a call back Date
+  $(".date").val(new Date().toJSON().slice(0, 10))
+
   //for request a call back
 
   $("#button").click(function () {
