@@ -43,22 +43,8 @@
       prx.bShowPlayerBetaPrompt = false
     </script>
   </head>
-  <body style="margin: 0px">
-    <div class="page-sidebar">
-      <div class="sidebar-action-buttons">
-        <!-- <span class="header-action-button player-icon-reload embed-icon-reload" id="refresh-preview">
-          <span class="tooltip">Refresh preview</span>
-        </span> -->
-
-        <!-- <span class="header-action-button player-icon-rotate embed-icon-rotate" id="change-orientation">
-          <span class="tooltip">Change orientation</span>
-        </span> -->
-
-        <!-- <div class="header-action-button player-icon-enter-fullscreen-mode-icon" id="go-fullscreen">
-          <span class="tooltip">Go full screen</span>
-        </div> -->
-      </div>
-    </div>
+  <body style="margin: 0px; overflow: hidden">
+    <div class="page-sidebar"></div>
 
     <div id="maincontent" class="portrait">
       <div id="shortcut-pressed-outer">
@@ -73,7 +59,7 @@
           <div class="buttons left"></div>
 
           <div class="body_generic_inner">
-            <iframe id="pio-playerframe" src="./src/index.html" scrolling="NO" style="width: 390px; height: 852px; border: none" webkitAllowFullScreen mozallowfullscreen allowfullscreen allowvr allow="autoplay"></iframe>
+            <iframe id="pio-playerframe" src="./src/index.html" scrolling="NO" style="width: 390px; height: 852px; border: none" webkitAllowFullScreen mozallowfullscreen allowfullscreen allowvr allow="autoplay"> </iframe>
           </div>
 
           <div class="buttons right"></div>
