@@ -4420,7 +4420,7 @@ p.form-message.error.form-message.error {
   animation-delay: 6s;
 }
 .slide:nth-child(3) .slide__inner {
-  background-image: url("../images/slider/1.jpg");
+  background-image: url("../images/safe_brokerage.png");
   animation-delay: 12s;
 }
 /* .slide:nth-child(4) .slide__inner {
@@ -4834,7 +4834,9 @@ input[type="date"]:before {
 
 .vision {
   font-weight: bold !important;
-  text-align: left;
+  text-align: center;
+  padding-top: 0px !important;
+  position: absolute;
   font-family: "SourceSansPro-Black";
 }
 
@@ -4865,7 +4867,7 @@ input[type="date"]:before {
   top: 30px;
   text-align: left;
   box-shadow: 6px 0 8px 0px #4545;
-  margin-left: 370px;
+  /* margin-left: 370px; */
   background-color: #006924;
   height: 150px;
   border-radius: 20px;
@@ -4921,7 +4923,6 @@ input[type="date"]:before {
 .client {
   width: 65%;
   box-shadow: 6px 0 8px 0px #4545;
-  margin-left: 370px;
   margin-top: -125px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -4936,10 +4937,12 @@ input[type="date"]:before {
   text-align: left;
   margin-top: -20px;
   padding-top: 40px;
-  margin-left: 370px;
   padding-left: 40px;
 }
 
+.offer-consultation {
+  margin-top: 320px;
+}
 .client-requirement p {
   line-height: 28px !important;
 }
@@ -4949,91 +4952,62 @@ input[type="date"]:before {
   background-color: #000000;
   height: 350px;
   border-radius: 20px;
-
-  width: 100%;
+  right: 150px;
+  width: 85%;
   text-align: left;
   position: absolute;
   top: 30px;
   /* margin-top: -435px; */
   padding-top: 15px;
-  margin-left: 650px;
   padding-left: 22px;
 }
 .fast-insurance p {
   line-height: 28px !important;
 }
 
-@media only screen and (max-width: 1200px) {
-  .fast-insurance {
-    margin-left: 615px;
+@media only screen and (max-width: 1199px) {
+  .fastest-insurance {
+    margin-left: 30px;
   }
-  .fast {
-    left: -30px;
-    margin-top: 50px;
+  .fast-insurance p {
+    font-size: 21px;
   }
-  .competative-price {
-    height: 165px;
-    margin-left: 355px;
+  .text-insure-competative {
+    font-size: 21px;
   }
-  .client {
-    margin-top: -60px;
-    margin-left: 348px;
+  .client-requirement p {
+    font-size: 21px;
   }
-  .client-requirement {
-    margin-left: 348px;
+  .easy-insurance-provider p {
+    font-size: 21px;
   }
 }
 
-@media only screen and (max-width: 1180px) {
-  .fast-insurance {
-    margin-left: 565px;
+@media only screen and (max-width: 992px) {
+  .single-features {
+    margin-left: 50px;
   }
-  .fast {
-    left: -80px;
-    margin-top: 50px;
-  }
-  .competative-price {
-    margin-left: 330px;
-  }
-  .client {
-    margin-left: 330px;
-  }
-  .client-requirement {
-    margin-left: 330px;
+  .fastest-insurance {
+    margin-left: -10px;
   }
 }
 
-@media only screen and (max-width: 1100px) {
-  .fast-insurance {
-    margin-left: 480px;
+@media only screen and (max-width: 922px) {
+  .single-features {
+    margin-left: 50px;
   }
-  .fast {
-    left: -165px;
-  }
-  .competative-price {
-    margin-left: 250px;
-  }
-  .client {
-    margin-left: 250px;
-  }
-  .client-requirement {
-    margin-left: 250px;
-  }
-  .insure-insurance {
-    margin-left: 30px;
-  }
-  .easy-insurance-provider {
-    margin-left: 30px;
+  .fastest-insurance {
+    margin-left: -10px;
   }
 }
 
 .fast {
-  width: 100%;
+  width: 85%;
   box-shadow: 6px 0 8px 0px #4545;
-  margin-left: 650px;
   /* margin-top: -95px; */
   position: absolute;
-  top: 290px;
+  right: 150px;
+  top: 325px;
   border-bottom-right-radius: 25px;
 }
 
@@ -5043,6 +5017,7 @@ input[type="date"]:before {
 }
 .easy-insure {
   display: flex;
+  justify-content: center;
 }
 
 .advisor p {

@@ -57,15 +57,15 @@ $(function () {
 
   //for request a call back
 
-  $("#button").click(function () {
+  $(".request-call").click(function () {
     $("#box form").toggle("slow")
     return false
   })
 
-  $("#button_call").click(function () {
-    $("#box form").toggle("slow")
-    return false
-  })
+  // $("#button_call").click(function () {
+  //   $("#box form").toggle("slow")
+  //   return false
+  // })
 
   //For Faq Plus Minus image
 
