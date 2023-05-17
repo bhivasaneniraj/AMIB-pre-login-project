@@ -3242,7 +3242,7 @@ p {
 .features-area {
   background-color: #f4f6f7;
   padding-top: 70px;
-  padding-bottom: 30px;
+  padding-bottom: 270px;
 }
 
 .single-features {
@@ -3309,9 +3309,9 @@ p {
   font-weight: 900;
   line-height: 25px;
   color: #fff;
+  font-family: "Source Sans Pro";
   margin-top: -85px;
   margin-left: 10px;
-  font-family: "Source Sans Pro";
 }
 .single-features .features-content .features-btn {
   color: #0067f4;
@@ -4006,7 +4006,6 @@ p {
   background-color: #004513;
   background-image: url("../images/contact_us.png");
   color: white;
-  height: 730px;
 }
 
 #contact-us-form {
@@ -4021,9 +4020,16 @@ p {
   font-weight: bold;
 }
 
-.contact-form {
-  margin-left: 600px;
-  margin-top: -350px;
+.contact-form-fill {
+  width: 500px;
+  position: relative;
+
+  left: 600px;
+  bottom: 350px;
+}
+
+.copyright-images {
+  margin-top: -20px;
 }
 
 #need-help {
@@ -4034,6 +4040,125 @@ p {
 .client-say {
   font-family: "Source Sans Pro";
   font-weight: 300;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .contact-area {
+    height: 1230px;
+  }
+  .contact-almulla-question {
+    left: 160px;
+  }
+  .contact-almulla-phone {
+    left: 160px;
+  }
+  .contact-almulla-timing {
+    left: 160px;
+  }
+  .loaction {
+    left: 160px;
+  }
+  .contact-form {
+    right: 480px;
+    position: relative;
+    margin-top: 130px;
+  }
+  .question-text {
+    margin-top: 10px;
+  }
+  .location-text {
+    font-size: 15px;
+  }
+  .question-email {
+    font-size: 15px;
+  }
+  #contact-us-form {
+    margin-left: 10px;
+  }
+  .copyright {
+    font-size: 9px;
+    margin-left: 225px;
+  }
+  .contact-img .contact-logo {
+    left: 50px;
+  }
+
+  .follow-us {
+    left: -590px;
+  }
+  .contact-img {
+    margin-top: 20px;
+    margin-left: 5px;
+  }
+  .back-to-top {
+    left: 300px;
+  }
+
+  .owl-carousel .item {
+    margin-bottom: 83px;
+    width: 200px;
+  }
+  .slide__heading {
+    padding-left: 20px;
+  }
+  .insurance-text {
+    display: block;
+    font-size: 28px;
+  }
+  .fast-policy p {
+    font-size: 22px;
+  }
+  .offer-consultant p {
+    font-size: 20px;
+    padding-left: 15px;
+  }
+  .advisor p {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  .make-easy p {
+    font-size: 20px;
+  }
+  .navbar-brand .almulla-img {
+    margin-left: 25px;
+  }
+  .motor-insurance img {
+    width: 170%;
+    margin-left: 230px;
+    margin-bottom: 230px;
+  }
+  #motor-third-party {
+    left: 60px;
+    top: 390px;
+  }
+  .pricing-header {
+    position: relative;
+    top: 250px;
+    right: 170px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .owl-carousel .item {
+    width: 70%;
+  }
+  .owl-carousel .owl-nav button.owl-prev {
+    margin-top: 50px;
+  }
+  .contact-img {
+    margin-left: 220px;
+  }
+  .copyright {
+    margin-left: 230px;
+  }
+  .contact-form-fill {
+    position: relative;
+    /* position: absolute; */
+    width: 350px;
+    left: 315px;
+    bottom: 380px;
+  }
 }
 
 .fill-form {
@@ -4611,6 +4736,33 @@ a.button {
   top: 65%;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #box {
+    left: 15px;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #box {
+    left: 400px;
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  #box {
+    left: 670px;
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #box {
+    left: 400px;
+  }
+}
+
 .quotes-request button {
   position: absolute;
   top: 80px;
@@ -4813,13 +4965,22 @@ input[type="date"]:before {
 } */
 
 .why-almulla {
-  margin-top: -40px;
+  clear: both;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .almulla-insure {
   color: #013f16;
   font-family: "Source Sans Pro";
   font-weight: bold;
+}
+
+.insurance-text {
+  color: #013f16;
+  font-family: "Source Sans Pro";
+  font-weight: 300;
 }
 
 .insurance-brokarage {
@@ -4888,116 +5049,186 @@ input[type="date"]:before {
 }
 
 .insure-insurance {
-  max-width: 65%;
-  box-shadow: 6px 0 8px 0px #4545;
-  margin-left: 100px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  max-width: 70%;
+}
+
+.easy-insurance-column {
+  position: relative;
+  left: 80px;
+}
+
+.offers {
+  position: relative;
+  right: 80px;
 }
 
 .easy-insurance-provider {
-  box-shadow: 0 10px 15px #454545;
+  margin-left: 0px !important;
+  margin-top: -16px !important;
   background-color: #00af3c;
-  height: 150px;
-  border-radius: 20px;
-  width: 65%;
-  text-align: left;
-  margin-top: -18px;
-  padding-top: 35px;
-  margin-left: 100px;
+  max-width: 70%;
+  padding-top: 50px;
+  position: relative;
   padding-left: 30px;
+  height: 170px;
+  font-size: 25px;
+  color: #ffffff;
+  line-height: 25px;
+  font-weight: 400 !important;
+  font-style: italic;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 .easy-insurance-provider p {
   line-height: 28px !important;
 }
 
-.text-insure {
-  font-size: 25px;
-  color: #ffffff;
-  line-height: 25px;
-  font-style: italic;
-  /* font-family: "Source Sans Pro";
-  font-weight: 100 !important; */
+@media only screen and (max-width: 1199px) {
+  .offers {
+    margin-top: 25px;
+  }
+  .fast-policy {
+    width: 110%;
+  }
+  .fastest-policy {
+    width: 110%;
+  }
 }
 
-.client {
-  width: 65%;
-  box-shadow: 6px 0 8px 0px #4545;
-  margin-top: -125px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+@media only screen and (max-width: 992px) {
+  .multiple-option {
+    margin-left: 150px;
+  }
+  .offers {
+    margin-left: 110px;
+  }
+  .design-policy {
+    margin-left: 75px;
+  }
+  .fast-policy {
+    margin-left: 40px;
+  }
+  .fastest-policy {
+    margin-left: 40px;
+  }
 }
 
-.client-requirement {
-  box-shadow: 0 10px 15px #454545;
-  background-color: #00290e;
-  height: 225px;
-  border-radius: 20px;
-  width: 65%;
-  text-align: left;
-  margin-top: -20px;
-  padding-top: 40px;
-  padding-left: 40px;
+@media only screen and (max-width: 575px) {
+  .multiple-option {
+    margin-left: 150px;
+  }
+  .offers {
+    margin-left: 110px;
+  }
+  .design-policy {
+    margin-left: 75px;
+  }
+  .fast-policy {
+    margin-left: 40px;
+  }
+  .fastest-policy {
+    margin-left: 40px;
+  }
 }
 
 .offer-consultation {
   margin-top: 320px;
 }
-.client-requirement p {
-  line-height: 28px !important;
-}
 
-.fast-insurance {
-  box-shadow: 0 10px 15px #454545;
-  background-color: #000000;
-  height: 350px;
-  border-radius: 20px;
-  right: 150px;
-  width: 85%;
-  text-align: left;
-  position: absolute;
-  top: 30px;
-  /* margin-top: -435px; */
-  padding-top: 15px;
-  padding-left: 22px;
-}
-.fast-insurance p {
-  line-height: 28px !important;
-}
-
-@media only screen and (max-width: 1199px) {
-  .fastest-insurance {
-    margin-left: 30px;
-  }
-  .fast-insurance p {
-    font-size: 21px;
-  }
-  .text-insure-competative {
-    font-size: 21px;
-  }
-  .client-requirement p {
-    font-size: 21px;
-  }
-  .easy-insurance-provider p {
-    font-size: 21px;
-  }
-}
-
-@media only screen and (max-width: 992px) {
+/* @media only screen and (max-width: 594px) {
   .single-features {
-    margin-left: 50px;
+  
   }
   .fastest-insurance {
-    margin-left: -10px;
+    margin-top: 930px;
+    right: 290px;
+  }
+  #price-competition {
+    margin-bottom: 601px;
+    margin-left: 110px;
+  }
+  .insure-insurance{
+    margin-left: 440px;
+  }
+  .easy-insurance-provider{
+    margin-left: 440px;
+  }
+  .offer-consultation {
+    margin-top: 330px;
+  }
+} */
+
+@media only screen and (max-width: 575px) {
+  .make-insurance {
+    max-width: 50%;
+  }
+  .make-easy p {
+    max-width: 50%;
+    line-height: 25px;
+    padding-top: 50px;
+    font-size: 25px;
+  }
+  .easy-insurance-column {
+    left: 150px;
+  }
+
+  .fast-policy p {
+    width: 349px;
+  }
+  .fastest-policy {
+    width: 388px;
+  }
+  .offers {
+    margin-left: 135px;
+    margin-top: -30px;
   }
 }
 
-@media only screen and (max-width: 922px) {
-  .single-features {
-    margin-left: 50px;
+@media only screen and (max-width: 506px) {
+  .offers {
+    margin-left: 110px;
   }
-  .fastest-insurance {
-    margin-left: -10px;
+  .make-insurance {
+    max-width: 55%;
+  }
+  .make-easy p {
+    max-width: 55%;
+  }
+  .multiple-option {
+    margin-left: 100px;
+  }
+  .easy-insurance-column {
+    left: 100px;
+  }
+}
+
+@media only screen and (max-width: 472px) {
+  .offers {
+    margin-left: 95px;
+  }
+}
+
+@media only screen and (max-width: 458px) {
+  .offers {
+    margin-left: 80px;
+  }
+}
+
+@media only screen and (max-width: 442px) {
+  .offers {
+    margin-left: 70px;
+  }
+}
+
+@media only screen and (max-width: 532px) {
+  .offers {
+    margin-left: 60px;
+  }
+}
+
+@media only screen and (max-width: 422px) {
+  .fastest-policy {
+    width: 110%;
   }
 }
 
@@ -5020,8 +5251,52 @@ input[type="date"]:before {
   justify-content: center;
 }
 
+.advisor {
+  margin-top: 20px !important;
+}
+
 .advisor p {
-  margin-top: -60px !important;
+  margin-left: 0px !important;
+  margin-top: -16px !important;
+  background-color: #006924;
+  max-width: 70%;
+  padding-top: 35px;
+  position: relative;
+  padding-left: 30px;
+  height: 180px;
+  font-size: 25px;
+  color: #ffffff;
+  line-height: 25px;
+  font-weight: 400 !important;
+  font-style: italic;
+  border-radius: 20px;
+}
+
+.offer-consultant p {
+  padding-top: 20px;
+  background-color: #00290e;
+}
+
+.fastest-policy {
+  margin-top: 310px;
+}
+
+.fastest-policy img {
+  max-width: 90%;
+}
+
+.fast-policy {
+  margin-top: -520px;
+}
+
+.fast-policy p {
+  height: 350px;
+  background-color: #000000;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  max-width: 90%;
 }
 
 .about-accordion {
@@ -5131,7 +5406,7 @@ input[type="date"]:before {
 /* Contact-us */
 
 .contact-container {
-  margin-top: 100px;
+  margin-top: 200px;
   background-image: url("../images/contact_us.png");
 }
 
@@ -5150,111 +5425,42 @@ input[type="date"]:before {
 }
 
 @media only screen and (max-width: 1900px) {
-  .follow-us {
-    margin-left: 1360px;
-  }
-  .contact-logo {
-    left: 1430px;
+  .contact-img {
+    margin-left: 10px;
   }
 }
 
 @media only screen and (max-width: 1840px) {
-  .follow-us {
-    margin-left: 1330px;
-  }
-  .contact-logo {
-    left: 1390px;
-  }
 }
 
 @media only screen and (max-width: 1794px) {
-  .follow-us {
-    margin-left: 1270px;
-  }
-  .contact-logo {
-    left: 1325px;
-  }
 }
 
 @media only screen and (max-width: 1734px) {
-  .follow-us {
-    margin-left: 1203px;
-  }
-  .contact-logo {
-    left: 1260px;
-  }
 }
 
 @media only screen and (max-width: 1664px) {
-  .follow-us {
-    margin-left: 1130px;
-  }
-  .contact-logo {
-    left: 1185px;
-  }
 }
 
 @media only screen and (max-width: 1585px) {
-  .follow-us {
-    margin-left: 1040px;
-  }
-  .contact-logo {
-    left: 1095px;
-  }
 }
 
 @media only screen and (max-width: 1503px) {
-  .follow-us {
-    margin-left: 1000px;
-  }
-  .contact-logo {
-    left: 1050px;
-  }
 }
 
 @media only screen and (max-width: 1450px) {
-  .follow-us {
-    margin-left: 945px;
-  }
-  .contact-logo {
-    left: 1000px;
-  }
 }
 
 @media only screen and (max-width: 1399px) {
-  .follow-us {
-    margin-left: 910px;
-  }
-  .contact-logo {
-    left: 960px;
-  }
 }
 
 @media only screen and (max-width: 1353px) {
-  .follow-us {
-    margin-left: 859px;
-  }
-  .contact-logo {
-    left: 910px;
-  }
 }
 
 @media only screen and (max-width: 1303px) {
-  .follow-us {
-    margin-left: 795px;
-  }
-  .contact-logo {
-    left: 845px;
-  }
 }
 
 @media only screen and (max-width: 1236px) {
-  .follow-us {
-    margin-left: 730px;
-  }
-  .contact-logo {
-    left: 785px;
-  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -5271,30 +5477,12 @@ input[type="date"]:before {
 }
 
 @media only screen and (max-width: 1136px) {
-  .follow-us {
-    margin-left: 680px;
-  }
-  .contact-logo {
-    left: 735px;
-  }
 }
 
 @media only screen and (max-width: 1080px) {
-  .follow-us {
-    margin-left: 645px;
-  }
-  .contact-logo {
-    left: 695px;
-  }
 }
 
 @media only screen and (max-width: 1040px) {
-  .follow-us {
-    margin-left: 590px;
-  }
-  .contact-logo {
-    left: 640px;
-  }
 }
 
 .location {
