@@ -53,7 +53,100 @@ $(function () {
   })
 
   //for request a call back Date
+
   $(".date").val(new Date().toJSON().slice(0, 10))
+
+  var dateTime = $(".date").val(new Date().toJSON().slice(0, 10))
+
+  console.log(dateTime, "Hello")
+  function updateDateTimeField() {
+    var datetimeField = document.getElementById("datetimeField")
+    var currentDateTime = new Date()
+
+    // Format hours, minutes, and seconds to ensure 2-digit representation
+    var hours = String(currentDateTime.getHours()).padStart(2, "0")
+    var minutes = String(currentDateTime.getMinutes()).padStart(2, "0")
+
+    // Format the date and time string in the desired format
+    var formattedDateTime = `${currentDateTime.toISOString().slice(0, 10)}T${hours}:${minutes}`
+
+    datetimeField.value = formattedDateTime
+
+    // Store the current time in local storage
+    localStorage.setItem("currentDateTime", formattedDateTime)
+  }
+
+  // Retrieve and display the stored time initially
+  var storedDateTime = localStorage.getItem("currentDateTime")
+  if (storedDateTime) {
+    document.getElementById("datetimeField").value = storedDateTime
+  }
+
+  // Update the field initially
+  updateDateTimeField()
+
+  // Update the field every second
+  setInterval(updateDateTimeField, 1000)
+  //for request a call back Date for Awards section
+  function updateDateTimeField() {
+    var datetimeField = document.getElementById("datetimeFields")
+    var currentDateTime = new Date()
+
+    // Format hours, minutes, and seconds to ensure 2-digit representation
+    var hours = String(currentDateTime.getHours()).padStart(2, "0")
+    var minutes = String(currentDateTime.getMinutes()).padStart(2, "0")
+
+    // Format the date and time string in the desired format
+    var formattedDateTime = `${currentDateTime.toISOString().slice(0, 10)}T${hours}:${minutes}`
+
+    datetimeField.value = formattedDateTime
+
+    // Store the current time in local storage
+    localStorage.setItem("currentDateTime", formattedDateTime)
+  }
+
+  // Retrieve and display the stored time initially
+  var storedDateTime = localStorage.getItem("currentDateTime")
+  if (storedDateTime) {
+    document.getElementById("datetimeFields").value = storedDateTime
+  }
+
+  // Update the field initially
+  updateDateTimeField()
+
+  // Update the field every second
+  setInterval(updateDateTimeField, 1000)
+
+  //Stay with us
+
+  function updateDateTimeField() {
+    var datetimeField = document.getElementById("datetimeFieldTime")
+    var currentDateTime = new Date()
+
+    // Format hours, minutes, and seconds to ensure 2-digit representation
+    var hours = String(currentDateTime.getHours()).padStart(2, "0")
+    var minutes = String(currentDateTime.getMinutes()).padStart(2, "0")
+
+    // Format the date and time string in the desired format
+    var formattedDateTime = `${currentDateTime.toISOString().slice(0, 10)}T${hours}:${minutes}`
+
+    datetimeField.value = formattedDateTime
+
+    // Store the current time in local storage
+    localStorage.setItem("currentDateTime", formattedDateTime)
+  }
+
+  // Retrieve and display the stored time initially
+  var storedDateTime = localStorage.getItem("currentDateTime")
+  if (storedDateTime) {
+    document.getElementById("datetimeFieldTime").value = storedDateTime
+  }
+
+  // Update the field initially
+  updateDateTimeField()
+
+  // Update the field every second
+  setInterval(updateDateTimeField, 1000)
 
   //for request a call back
 
@@ -62,27 +155,54 @@ $(function () {
     return false
   })
 
-  // $("#button_call").click(function () {
-  //   $("#box form").toggle("slow")
-  //   return false
-  // })
+  // FAQ Section
 
-  //For Faq Plus Minus image
+  // Get the search input and search results container
+  const searchInput = document.getElementById("searchInput")
+  const searchResults = document.getElementById("searchResults")
 
-  // function changeImage() {
-  //   var img = document.getElementsByClassName("minus_plus")
-  //   var src = img.getAttribute("src")
-  //   if (src == "assets/images/amib_plus.png") {
-  //     img.setAttribute("src", "assets/images/amib_minus.png")
-  //   } else {
-  //     img.setAttribute("src", "assets/images/amib_plus.png")
-  //   }
-  // }
+  // Function to perform the search
+  function searchFAQ() {
+    // Get the search query
+    const query = searchInput.value.toLowerCase()
 
-  // window.onload = function () {
-  //   var img = document.getElementsByClassName("minus_plus")
-  //   img.addEventListener("click", changeImage)
-  // }
+    // Clear previous search results
+    searchResults.innerHTML = ""
+
+    // Loop through each FAQ item
+    const faqItems = document.querySelectorAll(".faq-paragraph")
+    faqItems.forEach((item, index) => {
+      const faqText = item.textContent.toLowerCase()
+
+      // Check if the FAQ text contains the search query
+      if (faqText.includes(query)) {
+        // Create a new result item
+        const resultItem = document.createElement("div")
+        resultItem.classList.add("result-item")
+
+        // Set the result item content
+        resultItem.innerHTML = `
+          <h5>Question ${index + 1}</h5>
+          <p>${item.textContent}</p>
+        `
+
+        // Append the result item to the search results container
+        searchResults.appendChild(resultItem)
+      }
+    })
+
+    // Check if no results found
+    if (searchResults.children.length === 0) {
+      const noResults = document.createElement("p")
+      noResults.textContent = "No results found."
+      searchResults.appendChild(noResults)
+    }
+  }
+
+  // Add an event listener for the search input
+  searchInput.addEventListener("input", searchFAQ)
+
+  //FAQ Plus Minus Button Functoinality
 
   $(".minus_plus").on("click", function () {
     $(".minus_plus ").attr("src", "assets/images/amib_plus.png")
@@ -232,7 +352,8 @@ $(function () {
       {
         scrollTop: 0,
       },
-      1500
+      1500,
+      "easeInOutExpo" // Add easing for smooth animation
     )
   })
 

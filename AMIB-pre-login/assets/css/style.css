@@ -2742,6 +2742,7 @@ p {
   width: 100%;
   padding: 0 0;
   z-index: 99;
+  /* background-color: #ffffff; */
 }
 
 /* .service-navbar {
@@ -2955,12 +2956,12 @@ p {
 }
 .navbar-area .navbar .navbar-btn li a.solid {
   background-color: #fff;
-  border-color: #fff;
+  border-color: #00aa3b;
   color: #00aa3b;
 }
 .navbar-area .navbar .navbar-btn li a.solid:hover {
   background-color: transparent;
-  color: #fff;
+  color: #00aa3b;
 }
 
 .navbar-nav a:hover {
@@ -3243,6 +3244,10 @@ p {
   background-color: #f4f6f7;
   padding-top: 70px;
   padding-bottom: 270px;
+}
+
+.why-insurance {
+  margin-top: -200px;
 }
 
 .single-features {
@@ -3651,6 +3656,54 @@ p {
   width: 100%;
 }
 
+#rcorners1 {
+  border-radius: 25px;
+  background: #00af3c;
+  padding: 0;
+  box-shadow: 0 10px 15px #bebebe;
+  text-align: center;
+}
+
+#rcorners2 {
+  border-radius: 25px;
+  background: #006924;
+  padding: 0;
+
+  box-shadow: 0 10px 15px #bebebe;
+  text-align: center;
+}
+
+.black-imp {
+  background: #000000 !important;
+}
+.darkgreen-imp {
+  background: #00290e !important;
+}
+
+#rcorners1 p {
+  font-size: 21px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 25px;
+  display: inline-block;
+  font-style: italic;
+  text-align: left;
+  padding: 40px 20px 40px 20px;
+  display: inline-block;
+}
+
+#rcorners2 p {
+  font-size: 21px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 25px;
+  display: inline-block;
+  font-style: italic;
+  text-align: left;
+  padding: 40px 20px 40px 20px;
+  display: inline-block;
+}
+
 /*===========================
       26.TESTIMONIAL css 
 ===========================*/
@@ -4035,6 +4088,7 @@ p {
 #need-help {
   color: #ffffff;
   font-family: "Source Sans Pro";
+  width: 395px;
 }
 
 .client-say {
@@ -4047,22 +4101,14 @@ p {
   .contact-area {
     height: 1230px;
   }
-  .contact-almulla-question {
-    left: 160px;
-  }
-  .contact-almulla-phone {
-    left: 160px;
-  }
-  .contact-almulla-timing {
-    left: 160px;
-  }
-  .loaction {
-    left: 160px;
-  }
+
   .contact-form {
     right: 480px;
     position: relative;
     margin-top: 130px;
+  }
+  .contact-us-section {
+    margin-left: 10px;
   }
   .question-text {
     margin-top: 10px;
@@ -4073,24 +4119,20 @@ p {
   .question-email {
     font-size: 15px;
   }
-  #contact-us-form {
-    margin-left: 10px;
-  }
+
   .copyright {
     font-size: 9px;
     margin-left: 225px;
   }
-  .contact-img .contact-logo {
-    left: 50px;
+
+  .contact-form-fill {
+    width: 365px;
+    position: relative;
+
+    left: 20px;
+    top: 100px;
   }
 
-  .follow-us {
-    left: -590px;
-  }
-  .contact-img {
-    margin-top: 20px;
-    margin-left: 5px;
-  }
   .back-to-top {
     left: 300px;
   }
@@ -4146,9 +4188,9 @@ p {
   .owl-carousel .owl-nav button.owl-prev {
     margin-top: 50px;
   }
-  .contact-img {
+  /* .contact-img {
     margin-left: 220px;
-  }
+  } */
   .copyright {
     margin-left: 230px;
   }
@@ -4531,22 +4573,24 @@ p.form-message.error.form-message.error {
 }
 
 .faq_slide:nth-child(1) .slide_faq {
-  background-image: url("../images/faq.png") !important;
+  background-image: url("../images/faqimage.png") !important;
 }
 
-.slider_area {
-}
+/* .slider_area {
+  margin-top: 35px;
+} */
 
 .slide:nth-child(1) .slide__inner {
-  background-image: url("../images/slider/1.jpg");
+  background-image: url("../images/almullafamily.png");
 }
 .slide:nth-child(2) .slide__inner {
   background-image: url("../images/product-services/awards.png");
   animation-delay: 6s;
 }
 .slide:nth-child(3) .slide__inner {
-  background-image: url("../images/safe_brokerage.png");
+  background-image: url("../images/almullastaywith\ us.png");
   animation-delay: 12s;
+  height: 40%;
 }
 /* .slide:nth-child(4) .slide__inner {
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-5.jpg");
@@ -4579,7 +4623,7 @@ p.form-message.error.form-message.error {
 .slide__content {
   position: absolute;
   left: 5%;
-  top: 7%;
+  top: 10%;
   margin-left: -30px;
   margin-top: 48px;
   max-width: 480px;
@@ -4736,6 +4780,10 @@ a.button {
   top: 65%;
 }
 
+.almulla-stay-with-us {
+  margin-top: -130px;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   #box {
     left: 15px;
@@ -4838,6 +4886,44 @@ a.button {
   border-radius: 10px;
   width: 235px;
   border: 1px solid #fff;
+}
+
+.date {
+  height: 50px;
+  margin-left: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 280px;
+  border: 1px solid #fff;
+}
+
+input[type="datetime-local"] {
+  position: relative;
+  padding: 10px;
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  background: none;
+  z-index: 1;
+}
+
+input[type="datetime-local"]:before {
+  color: transparent;
+  background: none;
+  display: block;
+  font-family: "FontAwesome";
+  content: "\f073";
+  /* This is the calendar icon in FontAwesome */
+  width: 15px;
+  height: 20px;
+  position: absolute;
+  top: 12px;
+  right: 6px;
+  color: #999;
 }
 
 .searchbox-wrap button {
@@ -5426,41 +5512,104 @@ input[type="date"]:before {
 
 @media only screen and (max-width: 1900px) {
   .contact-img {
-    margin-left: 10px;
+    position: relative;
+    left: 600px;
   }
 }
 
-@media only screen and (max-width: 1840px) {
+@media only screen and (max-width: 1860px) {
+  .contact-img {
+    left: 550px;
+  }
 }
 
-@media only screen and (max-width: 1794px) {
+@media only screen and (max-width: 1810px) {
+  .contact-img {
+    left: 510px;
+  }
 }
 
-@media only screen and (max-width: 1734px) {
+@media only screen and (max-width: 1770px) {
+  .contact-img {
+    left: 480px;
+  }
 }
 
-@media only screen and (max-width: 1664px) {
+@media only screen and (max-width: 1740px) {
+  .contact-img {
+    left: 450px;
+  }
 }
 
-@media only screen and (max-width: 1585px) {
+@media only screen and (max-width: 1706px) {
+  .contact-img {
+    left: 420px;
+  }
 }
 
-@media only screen and (max-width: 1503px) {
+@media only screen and (max-width: 1676px) {
+  .contact-img {
+    left: 380px;
+  }
 }
 
-@media only screen and (max-width: 1450px) {
+@media only screen and (max-width: 1634px) {
+  .contact-img {
+    left: 350px;
+  }
 }
 
-@media only screen and (max-width: 1399px) {
+@media only screen and (max-width: 1602px) {
+  .contact-img {
+    left: 320px;
+  }
 }
 
-@media only screen and (max-width: 1353px) {
+@media only screen and (max-width: 1574px) {
+  .contact-img {
+    left: 280px;
+  }
 }
 
-@media only screen and (max-width: 1303px) {
+@media only screen and (max-width: 1534px) {
+  .contact-img {
+    left: 230px;
+  }
 }
 
-@media only screen and (max-width: 1236px) {
+@media only screen and (max-width: 1484px) {
+  .contact-img {
+    left: 180px;
+  }
+}
+
+@media only screen and (max-width: 1436px) {
+  .contact-img {
+    left: 130px;
+  }
+}
+
+@media only screen and (max-width: 1382px) {
+  .contact-img {
+    left: 85px;
+  }
+}
+
+@media only screen and (max-width: 1340px) {
+  .contact-img {
+    left: 35px;
+  }
+}
+
+@media only screen and (max-width: 1290px) {
+  .contact-img {
+    left: -15px;
+  }
+}
+@media only screen and (max-width: 1240px) {
+  .contact-img {
+    left: -60px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -5470,21 +5619,383 @@ input[type="date"]:before {
   }
 }
 
+@media only screen and (max-width: 1190px) {
+  .back-to-top {
+    left: 1130px;
+  }
+}
+
+@media only screen and (max-width: 1178px) {
+  .back-to-top {
+    left: 1100px;
+  }
+}
+
 @media only screen and (max-width: 1172px) {
   .contact-form {
     margin-left: 500px;
   }
 }
 
-@media only screen and (max-width: 1136px) {
+@media only screen and (max-width: 1150px) {
+  .back-to-top {
+    left: 1080px;
+  }
+  .contact-img {
+    left: -60px;
+  }
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1134px) {
+  .back-to-top {
+    left: 1050px;
+  }
+  .contact-img {
+    left: -90px;
+  }
 }
 
-@media only screen and (max-width: 1040px) {
+@media only screen and (max-width: 1104px) {
+  .back-to-top {
+    left: 1010px;
+  }
+  .contact-img {
+    left: -130px;
+  }
 }
 
+@media only screen and (max-width: 1064px) {
+  .back-to-top {
+    left: 970px;
+  }
+  /* .contact-img {
+    left: -170px;
+  } */
+  .contact-form-fill {
+    left: 500px;
+  }
+}
+
+@media only screen and (max-width: 1026px) {
+  .back-to-top {
+    left: 920px;
+  }
+  /* .contact-img {
+    left: -220px;
+  } */
+}
+
+@media only screen and (max-width: 1024px) {
+  .back-to-top {
+    left: 920px;
+  }
+  .contact-img {
+    left: -220px;
+  }
+  .copyright {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .back-to-top {
+    left: 920px;
+  }
+  .contact-img {
+    left: -10px;
+  }
+  .copyright {
+    margin-left: 230px;
+  }
+  #need-help {
+    width: 300px;
+  }
+  .contact-logo {
+    width: 4%;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .back-to-top {
+    left: 890px;
+  }
+}
+
+@media only screen and (max-width: 946px) {
+  .back-to-top {
+    left: 850px;
+  }
+  .contact-img {
+    left: -40px;
+  }
+  .copyright {
+    margin-left: 230px;
+  }
+  #need-help {
+    width: 300px;
+  }
+  .contact-logo {
+    width: 4%;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .contact-img {
+    left: -40px;
+  }
+  .copyright {
+    margin-left: 230px;
+  }
+  #need-help {
+    width: 270px;
+  }
+  .contact-logo {
+    width: 4%;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  .contact-img {
+    left: -60px;
+  }
+}
+
+@media only screen and (max-width: 898px) {
+  .back-to-top {
+    left: 820px;
+  }
+  .copyright {
+    font-size: 14px;
+  }
+  .contact-form-fill {
+    left: 450px;
+  }
+  .contact-us-section {
+    margin-left: 50px;
+  }
+  .contact-img {
+    left: -90px;
+  }
+}
+
+@media only screen and (max-width: 866px) {
+  .back-to-top {
+    left: 790px;
+  }
+  .copyright {
+    font-size: 14px;
+  }
+  .contact-form-fill {
+    left: 450px;
+  }
+  .contact-us-section {
+    margin-left: 100px;
+  }
+  .contact-img {
+    left: -115px;
+  }
+}
+
+@media only screen and (max-width: 842px) {
+  .back-to-top {
+    left: 760px;
+  }
+  .copyright {
+    font-size: 14px;
+  }
+  .contact-form-fill {
+    left: 450px;
+  }
+  .contact-us-section {
+    margin-left: 100px;
+  }
+  .contact-img {
+    left: -140px;
+  }
+}
+
+@media only screen and (max-width: 816px) {
+  .back-to-top {
+    left: 740px;
+  }
+  .copyright {
+    font-size: 14px;
+  }
+  .contact-form-fill {
+    left: 450px;
+  }
+  .contact-us-section {
+    margin-left: 150px;
+  }
+  .contact-img {
+    left: -170px;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .back-to-top {
+    left: 710px;
+  }
+  .copyright {
+    font-size: 12px;
+  }
+  .contact-form-fill {
+    left: 420px;
+  }
+  .contact-us-section {
+    margin-left: 150px;
+  }
+  .contact-img {
+    left: -190px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .back-to-top {
+    left: 710px;
+  }
+  .copyright {
+    font-size: 12px;
+  }
+  .contact-form-fill {
+    left: 50px;
+    top: 10px;
+  }
+  .contact-us-section {
+    margin-left: 210px;
+    margin-top: -80px;
+  }
+  .contact-img {
+    left: -190px;
+  }
+}
+
+@media only screen and (max-width: 756px) {
+  .back-to-top {
+    left: 680px;
+  }
+  .copyright {
+    font-size: 12px;
+  }
+  .contact-form-fill {
+    left: 50px;
+    top: 10px;
+  }
+  .contact-us-section {
+    margin-left: 210px;
+    margin-top: -80px;
+  }
+  .contact-img {
+    left: -190px;
+  }
+}
+
+@media only screen and (max-width: 738px) {
+  .back-to-top {
+    left: 650px;
+  }
+  .copyright {
+    font-size: 12px;
+  }
+  .contact-form-fill {
+    left: 50px;
+    top: 10px;
+  }
+  .contact-us-section {
+    margin-left: 210px;
+    margin-top: -80px;
+  }
+  .contact-img {
+    left: -220px;
+  }
+}
+
+@media only screen and (max-width: 713px) {
+  .back-to-top {
+    left: 630px;
+  }
+
+  .contact-img {
+    left: -250px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .back-to-top {
+    left: 600px;
+  }
+  .copyright {
+    font-size: 10px;
+  }
+
+  .contact-img {
+    left: -280px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .back-to-top {
+    left: 570px;
+  }
+  .copyright {
+    font-size: 10px;
+  }
+
+  .contact-img {
+    left: -320px;
+  }
+}
+
+@media only screen and (max-width: 618px) {
+  .back-to-top {
+    left: 530px;
+  }
+  .copyright {
+    font-size: 10px;
+  }
+
+  .contact-img {
+    left: -350px;
+  }
+}
+
+@media only screen and (max-width: 584px) {
+  .back-to-top {
+    left: 510px;
+  }
+  .copyright {
+    font-size: 10px;
+  }
+
+  .contact-img {
+    left: -380px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .back-to-top {
+    left: 480px;
+  }
+  .copyright {
+    margin-top: -25px;
+  }
+
+  .contact-img {
+    left: -780px;
+  }
+}
+
+@media only screen and (max-width: 534px) {
+  .back-to-top {
+    left: 445px;
+  }
+}
+
+@media only screen and (max-width: 498px) {
+  .back-to-top {
+    left: 420px;
+  }
+}
 .location {
   /* max-width: 250%; */
   position: absolute;
@@ -5498,6 +6009,10 @@ input[type="date"]:before {
   margin-top: 30px;
 }
 
+#question-mark {
+  margin-top: 50px;
+}
+
 /* .question2 {
   bottom: 234px;
   left: 600px;
@@ -5507,6 +6022,7 @@ input[type="date"]:before {
   text-align: left;
   color: #ffff !important;
   padding-left: 50px;
+  padding-top: 20px;
 }
 
 .question-email {
@@ -5526,7 +6042,7 @@ input[type="date"]:before {
 }
 
 .contact-almulla-phone {
-  margin-top: 55px;
+  margin-top: 45px;
 }
 
 .contact-almulla-timing {
@@ -5535,7 +6051,7 @@ input[type="date"]:before {
 
 .phone {
   max-width: 17%;
-  margin-top: 25px;
+  margin-top: 50px;
 }
 
 .loaction {
@@ -5762,4 +6278,17 @@ input[type="date"]:before {
   margin-top: -2px;
   margin-left: 174px;
   max-width: 100%;
+}
+
+.search-faq {
+  display: block;
+  max-width: 600px;
+  width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 10px auto;
+  background: #fff;
+  border-radius: 20px;
+  padding: 14px 20px;
+  border: 0 none;
+  outline: 0;
 }
