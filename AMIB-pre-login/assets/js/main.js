@@ -53,156 +53,35 @@ $(function () {
   })
 
   //for request a call back Date
-
   $(".date").val(new Date().toJSON().slice(0, 10))
 
-  var dateTime = $(".date").val(new Date().toJSON().slice(0, 10))
+  // Get the input field element by its class name
+  var datetimeField = document.querySelector(".date")
 
-  console.log(dateTime, "Hello")
-  function updateDateTimeField() {
-    var datetimeField = document.getElementById("datetimeField")
-    var currentDateTime = new Date()
+  // Function to format the current date and time
+  function getCurrentDateTime() {
+    var now = new Date()
+    var year = now.getFullYear()
+    var month = String(now.getMonth() + 1).padStart(2, "0")
+    var day = String(now.getDate()).padStart(2, "0")
+    var hours = String(now.getHours()).padStart(2, "0")
+    var minutes = String(now.getMinutes()).padStart(2, "0")
 
-    // Format hours, minutes, and seconds to ensure 2-digit representation
-    var hours = String(currentDateTime.getHours()).padStart(2, "0")
-    var minutes = String(currentDateTime.getMinutes()).padStart(2, "0")
-
-    // Format the date and time string in the desired format
-    var formattedDateTime = `${currentDateTime.toISOString().slice(0, 10)}T${hours}:${minutes}`
-
-    datetimeField.value = formattedDateTime
-
-    // Store the current time in local storage
-    localStorage.setItem("currentDateTime", formattedDateTime)
+    return `${year}-${month}-${day}T${hours}:${minutes}`
   }
 
-  // Retrieve and display the stored time initially
-  var storedDateTime = localStorage.getItem("currentDateTime")
-  if (storedDateTime) {
-    document.getElementById("datetimeField").value = storedDateTime
-  }
-
-  // Update the field initially
-  updateDateTimeField()
-
-  // Update the field every second
-  setInterval(updateDateTimeField, 1000)
-  //for request a call back Date for Awards section
-  function updateDateTimeField() {
-    var datetimeField = document.getElementById("datetimeFields")
-    var currentDateTime = new Date()
-
-    // Format hours, minutes, and seconds to ensure 2-digit representation
-    var hours = String(currentDateTime.getHours()).padStart(2, "0")
-    var minutes = String(currentDateTime.getMinutes()).padStart(2, "0")
-
-    // Format the date and time string in the desired format
-    var formattedDateTime = `${currentDateTime.toISOString().slice(0, 10)}T${hours}:${minutes}`
-
-    datetimeField.value = formattedDateTime
-
-    // Store the current time in local storage
-    localStorage.setItem("currentDateTime", formattedDateTime)
-  }
-
-  // Retrieve and display the stored time initially
-  var storedDateTime = localStorage.getItem("currentDateTime")
-  if (storedDateTime) {
-    document.getElementById("datetimeFields").value = storedDateTime
-  }
-
-  // Update the field initially
-  updateDateTimeField()
-
-  // Update the field every second
-  setInterval(updateDateTimeField, 1000)
-
-  //Stay with us
-
-  function updateDateTimeField() {
-    var datetimeField = document.getElementById("datetimeFieldTime")
-    var currentDateTime = new Date()
-
-    // Format hours, minutes, and seconds to ensure 2-digit representation
-    var hours = String(currentDateTime.getHours()).padStart(2, "0")
-    var minutes = String(currentDateTime.getMinutes()).padStart(2, "0")
-
-    // Format the date and time string in the desired format
-    var formattedDateTime = `${currentDateTime.toISOString().slice(0, 10)}T${hours}:${minutes}`
-
-    datetimeField.value = formattedDateTime
-
-    // Store the current time in local storage
-    localStorage.setItem("currentDateTime", formattedDateTime)
-  }
-
-  // Retrieve and display the stored time initially
-  var storedDateTime = localStorage.getItem("currentDateTime")
-  if (storedDateTime) {
-    document.getElementById("datetimeFieldTime").value = storedDateTime
-  }
-
-  // Update the field initially
-  updateDateTimeField()
-
-  // Update the field every second
-  setInterval(updateDateTimeField, 1000)
-
+  // Set the current date and time as the value of the input field
+  datetimeField.value = getCurrentDateTime()
   //for request a call back
 
   $(".request-call").click(function () {
-    $("#box form").toggle("slow")
+    $(".form-box form").toggle("slow")
     return false
   })
 
-  // FAQ Section
+  //FAQ Section
 
-  // Get the search input and search results container
-  const searchInput = document.getElementById("searchInput")
-  const searchResults = document.getElementById("searchResults")
-
-  // Function to perform the search
-  function searchFAQ() {
-    // Get the search query
-    const query = searchInput.value.toLowerCase()
-
-    // Clear previous search results
-    searchResults.innerHTML = ""
-
-    // Loop through each FAQ item
-    const faqItems = document.querySelectorAll(".faq-paragraph")
-    faqItems.forEach((item, index) => {
-      const faqText = item.textContent.toLowerCase()
-
-      // Check if the FAQ text contains the search query
-      if (faqText.includes(query)) {
-        // Create a new result item
-        const resultItem = document.createElement("div")
-        resultItem.classList.add("result-item")
-
-        // Set the result item content
-        resultItem.innerHTML = `
-          <h5>Question ${index + 1}</h5>
-          <p>${item.textContent}</p>
-        `
-
-        // Append the result item to the search results container
-        searchResults.appendChild(resultItem)
-      }
-    })
-
-    // Check if no results found
-    if (searchResults.children.length === 0) {
-      const noResults = document.createElement("p")
-      noResults.textContent = "No results found."
-      searchResults.appendChild(noResults)
-    }
-  }
-
-  // Add an event listener for the search input
-  searchInput.addEventListener("input", searchFAQ)
-
-  //FAQ Plus Minus Button Functoinality
+  //For Faq Plus Minus image
 
   $(".minus_plus").on("click", function () {
     $(".minus_plus ").attr("src", "assets/images/amib_plus.png")
@@ -212,6 +91,39 @@ $(function () {
       $(this).attr("src", "assets/images/amib_plus.png")
     }
   })
+
+  function searchFAQ() {
+    // Get the search input value
+    var searchTerm = $("#searchInput").val().toLowerCase()
+
+    // Clear previous search results
+    $("#searchResults").empty()
+
+    // Loop through each FAQ item
+    $(".card-header").each(function () {
+      var faqQuestion = $(this).text().toLowerCase()
+      var faqCard = $(this).closest(".card")
+
+      // Check if the search term is present in the FAQ question
+      if (faqQuestion.includes(searchTerm)) {
+        // Show the matching FAQ card
+        faqCard.show()
+      } else {
+        // Hide the non-matching FAQ card
+        faqCard.hide()
+      }
+    })
+
+    // Show/hide the search results section based on search term presence
+    var searchResultsCount = $("#searchResults .card:visible").length
+    if (searchResultsCount > 0) {
+      $("#searchResults").show()
+    } else {
+      $("#searchResults").hide()
+    }
+  }
+
+  $("#searchInput").keyup(searchFAQ)
 
   //===== close navbar-collapse when a  clicked
 
@@ -352,8 +264,7 @@ $(function () {
       {
         scrollTop: 0,
       },
-      1500,
-      "easeInOutExpo" // Add easing for smooth animation
+      1500
     )
   })
 

@@ -55,34 +55,40 @@ $(function () {
   //for request a call back Date
   $(".date").val(new Date().toJSON().slice(0, 10))
 
+  // Function to update the date and time in the input fields
+  function updateDateTime() {
+    var currentDateTime = new Date()
+    var year = currentDateTime.getFullYear()
+    var month = (currentDateTime.getMonth() + 1).toString().padStart(2, "0") // Months are zero-based
+    var day = currentDateTime.getDate().toString().padStart(2, "0")
+    var hours = currentDateTime.getHours().toString().padStart(2, "0")
+    var minutes = currentDateTime.getMinutes().toString().padStart(2, "0")
+
+    // Format the date and time as required for the input fields
+    var formattedDateTime = `${year}-${month}-${day}T${hours}:${minutes}`
+
+    // Update the value attribute of all input fields with the 'date' class
+    var inputFields = document.getElementsByClassName("date")
+    for (var i = 0; i < inputFields.length; i++) {
+      inputFields[i].value = formattedDateTime
+    }
+  }
+
+  // Update the date and time immediately
+  updateDateTime()
+
+  // Update the date and time every second
+  setInterval(updateDateTime, 1000)
   //for request a call back
 
   $(".request-call").click(function () {
-    $("#box form").toggle("slow")
+    $(".form-box form").toggle("slow")
     return false
   })
 
-  // $("#button_call").click(function () {
-  //   $("#box form").toggle("slow")
-  //   return false
-  // })
+  //FAQ Section
 
   //For Faq Plus Minus image
-
-  // function changeImage() {
-  //   var img = document.getElementsByClassName("minus_plus")
-  //   var src = img.getAttribute("src")
-  //   if (src == "assets/images/amib_plus.png") {
-  //     img.setAttribute("src", "assets/images/amib_minus.png")
-  //   } else {
-  //     img.setAttribute("src", "assets/images/amib_plus.png")
-  //   }
-  // }
-
-  // window.onload = function () {
-  //   var img = document.getElementsByClassName("minus_plus")
-  //   img.addEventListener("click", changeImage)
-  // }
 
   $(".minus_plus").on("click", function () {
     $(".minus_plus ").attr("src", "assets/images/amib_plus.png")
@@ -92,6 +98,39 @@ $(function () {
       $(this).attr("src", "assets/images/amib_plus.png")
     }
   })
+
+  function searchFAQ() {
+    // Get the search input value
+    var searchTerm = $("#searchInput").val().toLowerCase()
+
+    // Clear previous search results
+    $("#searchResults").empty()
+
+    // Loop through each FAQ item
+    $(".card-header").each(function () {
+      var faqQuestion = $(this).text().toLowerCase()
+      var faqCard = $(this).closest(".card")
+
+      // Check if the search term is present in the FAQ question
+      if (faqQuestion.includes(searchTerm)) {
+        // Show the matching FAQ card
+        faqCard.show()
+      } else {
+        // Hide the non-matching FAQ card
+        faqCard.hide()
+      }
+    })
+
+    // Show/hide the search results section based on search term presence
+    var searchResultsCount = $("#searchResults .card:visible").length
+    if (searchResultsCount > 0) {
+      $("#searchResults").show()
+    } else {
+      $("#searchResults").hide()
+    }
+  }
+
+  $("#searchInput").keyup(searchFAQ)
 
   //===== close navbar-collapse when a  clicked
 
