@@ -2523,7 +2523,7 @@ p {
   height: 44px;
   border: 2px solid;
   padding-left: 44px;
-  padding-right: 12px;
+  padding-right: 44px;
   position: relative;
   font-size: 16px;
   border-radius: 10px;
@@ -2536,7 +2536,7 @@ p {
 .form-input .input-items i {
   position: absolute;
   top: 11px;
-  left: 13px;
+  right: 125px;
   font-size: 20px;
   z-index: 9;
 }
@@ -2920,15 +2920,15 @@ p {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .navbar-area .navbar .navbar-btn {
     position: absolute;
-    right: 70px;
-    top: 7px;
+    left: 70px;
+    /* top: 7px; */
   }
 }
 @media (max-width: 767px) {
   .navbar-area .navbar .navbar-btn {
     position: absolute;
-    right: 60px;
-    top: 7px;
+    left: 60px;
+    /* top: 7px; */
   }
 }
 .navbar-area .navbar .navbar-btn li {
@@ -3243,13 +3243,10 @@ p {
 /*===== features TWO =====*/
 .features-area {
   background-color: #f4f6f7;
-  padding-top: 70px;
-  padding-bottom: 270px;
 }
 .about-us-area {
   background-color: #f4f6f7;
   padding-top: 100px;
-  padding-bottom: 150px;
 }
 
 /* .why-insurance {
@@ -3322,7 +3319,7 @@ p {
   color: #fff;
   font-family: "Source Sans Pro";
   margin-top: -85px;
-  margin-left: 10px;
+  margin-left: 65px;
 }
 .single-features .features-content .features-btn {
   color: #0067f4;
@@ -3579,8 +3576,8 @@ p {
 
 .about-area .img-fluid {
   position: absolute;
-  margin-top: 258px;
-  opacity: 0.7;
+  margin-top: 336px;
+  opacity: 0.5;
 }
 .about-area .about-title .sub-title {
   font-size: 18px;
@@ -3968,6 +3965,7 @@ p {
   color: #ffffff;
 }
 .team-style-eleven .team-image img {
+  margin-top: 10px;
 }
 .team-style-eleven .team-content {
   bottom: 0;
@@ -3995,9 +3993,9 @@ p {
   height: 100%;
   top: 0;
   left: 0;
-  background: -webkit-linear-gradient(left, #0067f4 0%, #2bdbdc 100%);
-  background: -o-linear-gradient(left, #0067f4 0%, #2bdbdc 100%);
-  background: linear-gradient(to right, #0067f4 0%, #2bdbdc 100%);
+  background: -webkit-linear-gradient(left, #00aa3b 0%, #00aa3b 100%);
+  background: -o-linear-gradient(left, #00aa3b 0%, #00aa3b 100%);
+  background: linear-gradient(to right, #00aa3b 0%, #00aa3b 100%);
   z-index: -1;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
@@ -4102,11 +4100,11 @@ p {
       19.CONTACT css 
 ===========================*/
 .contact-area {
-  padding-top: 200px;
+  padding-top: 40px;
   padding-bottom: 130px;
   background-color: #004513;
   color: white;
-  height: 1015px;
+  height: 905px;
 }
 
 #contact-us-form p {
@@ -4165,16 +4163,9 @@ p {
     font-size: 15px;
   }
 
-  /* .copyright {
-    font-size: 9px;
-    margin-left: 225px;
-  } */
-
   .contact-form-fill {
     width: 365px;
     position: relative;
-    /* 
-    left: 20px; */
     top: 100px;
   }
 
@@ -4182,6 +4173,7 @@ p {
     margin-bottom: 83px;
     width: 200px;
   }
+
   .slide__heading {
     padding-left: 20px;
   }
@@ -4229,9 +4221,7 @@ p {
   }
   .contact-form-fill {
     position: relative;
-    /* position: absolute; */
     width: 350px;
-    /* left: 315px; */
     bottom: 380px;
   }
 }
@@ -4313,30 +4303,10 @@ p.form-message.error.form-message.error {
   width: 25px;
 }
 
-/* @media only screen and (max-width: 2000px) {
-  .contact-logo {
-    left: 1580px;
-  }
-
-} */
-
 .contact-us-copyright {
   position: absolute;
   margin-top: 100px;
 }
-
-/* 
-.copyright {
-  color: #ffffff;
-  clear: both;
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  position: absolute;
-  right: 40px;
-
-  font-family: "Source Sans Pro-regular", sans-serif;
-} */
 
 .text-light {
   font-size: 15px;
@@ -4608,10 +4578,6 @@ p.form-message.error.form-message.error {
   background-image: url("../images/faqimage.png") !important;
 }
 
-/* .slider_area {
-  margin-top: 35px;
-} */
-
 .slide:nth-child(1) .slide__inner {
   background-image: url("../images/almullafamily.png");
 }
@@ -4808,8 +4774,12 @@ a.button {
   width: 53px;
   z-index: 10;
   position: relative;
-  left: 70%;
+  right: 50px;
   top: 65%;
+}
+
+.quotes-request {
+  margin-left: 50px;
 }
 
 .almulla-stay-with-us {
@@ -4986,7 +4956,6 @@ a.button {
 #box form {
   background: #00aa3b;
   padding: 5px;
-  /* border-radius: 10px; */
   display: none;
   width: 320px;
   border-top-left-radius: 10px;
@@ -5028,13 +4997,13 @@ a.button {
   width: 500px;
   margin-top: 10px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 20px;
 }
 
 .searchbox-wrap input {
   height: 50px;
   margin-left: 10px;
-  padding-left: 10px;
+  padding-right: 10px;
   font-size: 16px;
   font-weight: bold;
   border-radius: 10px;
@@ -5083,7 +5052,7 @@ input[type="datetime-local"]:before {
 .searchbox-wrap button {
   width: 65px;
   border-radius: 10px;
-  margin-left: -20px;
+  margin-right: -30px;
   border: none;
   background-color: #fff;
 }
@@ -5188,21 +5157,6 @@ input[type="date"]:before {
 }
 
 /* About Us */
-/* .desired-insurance {
-  background: linear-gradient(to bottom, white, white, #beffd4, #beffd4, #beffd4, #beffd4, #beffd4);
-} */
-
-/* .desired-insurance {
-  content: "";
-  position: absolute;
-  background: linear-gradient(0deg, rgba(39, 38, 42, 1) 0%, rgba(255, 255, 255, 0) 60%);
-  z-index: 2;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-image: url("../images/slider/services-1.png");
-} */
 
 .why-almulla {
   clear: both;
@@ -5247,21 +5201,6 @@ input[type="date"]:before {
   /* box-shadow: 0 10px 10px -5px; */
   background: none;
 }
-/* 
-.text-insure {
-  background-color: #00af3c;
-  height: 150px;
-  border-radius: 20px;
-  color: #ffffff;
-  font-family: SourceSansPro-SemiboldIt;
-  width: 65%;
-  font-size: 25px;
-  text-align: left;
-  margin-top: -18px;
-  padding-top: 35px;
-  margin-left: 50px;
-  padding-left: 40px;
-} */
 
 .competative-price {
   position: absolute;
@@ -5282,10 +5221,8 @@ input[type="date"]:before {
   color: #ffffff;
   line-height: 28px;
   font-size: 25px;
-  /* font-weight: 100 !important; */
   font-style: italic;
   margin-top: -10px;
-  /* font-family: "Source Sans Pro"; */
 }
 
 .insure-insurance {
@@ -5374,29 +5311,6 @@ input[type="date"]:before {
 .offer-consultation {
   margin-top: 320px;
 }
-
-/* @media only screen and (max-width: 594px) {
-  .single-features {
-  
-  }
-  .fastest-insurance {
-    margin-top: 930px;
-    right: 290px;
-  }
-  #price-competition {
-    margin-bottom: 601px;
-    margin-left: 110px;
-  }
-  .insure-insurance{
-    margin-left: 440px;
-  }
-  .easy-insurance-provider{
-    margin-left: 440px;
-  }
-  .offer-consultation {
-    margin-top: 330px;
-  }
-} */
 
 @media only screen and (max-width: 575px) {
   .make-insurance {
@@ -5585,14 +5499,21 @@ input[type="date"]:before {
   color: #00963b !important;
   font-family: "Source Sans Pro";
   font-weight: 700;
+  padding-left: 30px;
 }
 
 .faq-paragraph {
   font-size: 13px !important;
   line-height: 20px !important;
 }
-.faq {
+#faq {
   background-image: url("../images/faq_background.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+#faq::before {
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the alpha value (0.5) to control the opacity */
 }
 
 .faq-insure-text {
@@ -5601,6 +5522,7 @@ input[type="date"]:before {
   margin-left: 0px;
   font-family: "Source Sans Pro";
   font-weight: 700;
+  padding-left: 30px;
 }
 
 .faq-container {
@@ -5670,19 +5592,10 @@ input[type="date"]:before {
   }
 }
 
-/* .plus {
-  background-image: url("../images/noun_add_1075139_copy.png");
-  background-repeat: no-repeat;
-}
-
-.plus.minus {
-  background-image: url("../images/noun_add_1075139_copy_5.png");
-  background-repeat: no-repeat;
-} */
 .img2 {
   width: 20px;
   position: absolute;
-  left: 600px;
+  right: 610px;
   top: 20px;
   cursor: pointer;
 }
@@ -5710,7 +5623,6 @@ input[type="date"]:before {
 }
 
 .location {
-  /* max-width: 250%; */
   position: absolute;
   margin-top: -105px;
   margin-left: -180px;
@@ -5725,11 +5637,6 @@ input[type="date"]:before {
 #question-mark {
   margin-top: 50px;
 }
-
-/* .question2 {
-  bottom: 234px;
-  left: 600px;
-} */
 
 .question-text {
   text-align: left;
@@ -5751,10 +5658,12 @@ input[type="date"]:before {
 
 .contact-almulla-question {
   margin-top: -50px;
+  margin-right: 80px;
 }
 
 .contact-almulla-phone {
   margin-top: 45px;
+  margin-right: 80px;
 }
 
 .contact-almulla-timing {
@@ -5762,17 +5671,18 @@ input[type="date"]:before {
 }
 
 .phone {
-  max-width: 11%;
+  max-width: 10%;
   margin-top: 50px;
 }
 
 .loaction {
   margin-top: 280px;
+  margin-right: 80px;
 }
 
-.location-text {
+/* .location-text {
   width: 190%;
-}
+} */
 
 .location-img {
   max-width: 35px;
@@ -5917,12 +5827,6 @@ input[type="date"]:before {
   font-weight: 500;
 }
 
-/* #motor-third-party {
-  position: absolute;
-  top: 150px;
-  left: 250px;
-} */
-
 @media only screen and (max-width: 992px) {
   .motor-info {
     padding: 40px 20px 40px 40px;
@@ -5946,6 +5850,7 @@ input[type="date"]:before {
 .insurance {
   display: flex;
   margin-top: -15px;
+  justify-content: center;
 }
 
 .insurance img {
@@ -5966,6 +5871,8 @@ input[type="date"]:before {
   width: 130%;
   margin-top: -10px;
   padding-left: 85px;
+  display: flex;
+  justify-content: center;
 }
 
 .workmen {
@@ -6049,7 +5956,6 @@ input[type="date"]:before {
 }
 
 .mobile_wrap {
-  /* left: 5px; */
   margin-top: -80px;
   margin-left: -65px;
 }
@@ -6067,7 +5973,7 @@ input[type="date"]:before {
 }
 
 .app-feature-text {
-  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 20px;
   font-size: 30px;
   font-family: "Source Sans Pro";
@@ -6084,19 +5990,9 @@ input[type="date"]:before {
   height: 962px;
 }
 
-/* .mobile_wrap {
-  background-image: url(../images/App-features/App-feature-mobile.png);
-} */
-
 .mobile-features {
   position: relative;
 }
-
-/* .app-featur-frame {
-  position: absolute;
-  left: 0px;
-  top: 40px;
-} */
 
 .app-featur-frame {
   margin-top: -2px;
@@ -6129,11 +6025,11 @@ input[type="date"]:before {
 .form-search input {
   width: 60%;
   box-sizing: border-box;
-  border-bottom-left-radius: 15px;
-  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
   background-color: #ffffff;
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3), 0 10px 12px rgba(0, 0, 0, 0.22);
-  padding: 14px 15px 14px 40px;
+  padding: 14px 20px 14px 30px;
   border: 1px solid #b6c3cd;
   border-right: 0;
   color: #4e565c;
@@ -6143,13 +6039,14 @@ input[type="date"]:before {
 }
 
 .form-search button {
-  border-bottom-right-radius: 15px;
-  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
   background-color: #00aa3b;
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3), 0 10px 12px rgba(0, 0, 0, 0.22);
   color: #ffffff;
   padding: 15px 22px;
-  margin-left: -4px;
+  margin-left: 17px;
+  position: absolute;
   cursor: pointer;
   font-size: 15px;
   border: none;

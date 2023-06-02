@@ -28,6 +28,7 @@ $(function () {
     var scrollbarLocation = $(this).scrollTop()
 
     scrollLink.each(function () {
+      var sectionId = $(this).attr("href") // Get the href attribute instead of using this.hash
       var sectionOffset = $(this.hash).offset().top - 73
 
       if (sectionOffset <= scrollbarLocation) {
@@ -37,41 +38,8 @@ $(function () {
     })
   })
 
-  var scrollLink = $(".page-scroll")
-  // Active link switching
-  $(window).scroll(function () {
-    var scrollbarLocation = $(this).scrollTop()
+  /***************************************************/
 
-    scrollLink.each(function () {
-      var sectionOffset = $(this.hash).offset().top - 73
-
-      if (sectionOffset <= scrollbarLocation) {
-        $(this).parent().addClass("active")
-        $(this).parent().siblings().removeClass("active")
-      }
-    })
-  })
-
-  //for request a call back Date
-  $(".date").val(new Date().toJSON().slice(0, 10))
-
-  // Get the input field element by its class name
-  var datetimeField = document.querySelector(".date")
-
-  // Function to format the current date and time
-  function getCurrentDateTime() {
-    var now = new Date()
-    var year = now.getFullYear()
-    var month = String(now.getMonth() + 1).padStart(2, "0")
-    var day = String(now.getDate()).padStart(2, "0")
-    var hours = String(now.getHours()).padStart(2, "0")
-    var minutes = String(now.getMinutes()).padStart(2, "0")
-
-    return `${year}-${month}-${day}T${hours}:${minutes}`
-  }
-
-  // Set the current date and time as the value of the input field
-  datetimeField.value = getCurrentDateTime()
   //for request a call back
 
   $(".request-call").click(function () {

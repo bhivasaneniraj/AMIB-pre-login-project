@@ -55,10 +55,10 @@
         interval = setInterval(function () {
           var $nextControl = document.querySelector(".slider__control.m--right")
           $nextControl.click()
-        }, 90000)
+        }, 10000)
       }
     }
-  }, 90000)
+  }, 10000)
 
   $slides.forEach(function ($el) {
     $el.addEventListener("mouseover", function () {

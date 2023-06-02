@@ -3243,7 +3243,6 @@ p {
 /*===== features TWO =====*/
 .features-area {
   background-color: #f4f6f7;
-  padding-bottom: 270px;
 }
 .about-us-area {
   background-color: #f4f6f7;
@@ -3569,6 +3568,7 @@ p {
   padding-top: 80px;
   padding-bottom: 130px;
   position: relative;
+  background-image: url();
 }
 
 .about-us-container {
@@ -3577,8 +3577,8 @@ p {
 
 .about-area .img-fluid {
   position: absolute;
-  margin-top: 258px;
-  opacity: 0.7;
+  margin-top: 336px;
+  opacity: 0.5;
 }
 .about-area .about-title .sub-title {
   font-size: 18px;
@@ -3966,7 +3966,9 @@ p {
   color: #ffffff;
 }
 .team-style-eleven .team-image img {
+  margin-top: 10px;
 }
+
 .team-style-eleven .team-content {
   bottom: 0;
   left: 0;
@@ -3993,9 +3995,9 @@ p {
   height: 100%;
   top: 0;
   left: 0;
-  background: -webkit-linear-gradient(left, #0067f4 0%, #2bdbdc 100%);
-  background: -o-linear-gradient(left, #0067f4 0%, #2bdbdc 100%);
-  background: linear-gradient(to right, #0067f4 0%, #2bdbdc 100%);
+  background: -webkit-linear-gradient(left, #00aa3b 0%, #00aa3b 100%);
+  background: -o-linear-gradient(left, #00aa3b 0%, #00aa3b 100%);
+  background: linear-gradient(to right, #00aa3b 0%, #00aa3b 100%);
   z-index: -1;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
@@ -4104,7 +4106,7 @@ p {
   padding-bottom: 130px;
   background-color: #004513;
   color: white;
-  height: 850px;
+  height: 905px;
 }
 
 #contact-us-form p {
@@ -4585,7 +4587,7 @@ p.form-message.error.form-message.error {
   animation-delay: 6s;
 }
 .slide:nth-child(3) .slide__inner {
-  background-image: url("../images/almullastaywith\ us.png");
+  background-image: url("../images/stay_with_us.png");
   animation-delay: 12s;
   height: 40%;
 }
@@ -4777,9 +4779,9 @@ a.button {
   top: 65%;
 }
 
-.almulla-stay-with-us {
+/* .almulla-stay-with-us {
   margin-top: -130px;
-}
+} */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   #box {
@@ -5500,8 +5502,14 @@ input[type="date"]:before {
   font-size: 13px !important;
   line-height: 20px !important;
 }
-.faq {
+#faq {
   background-image: url("../images/faq_background.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+#faq::before {
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the alpha value (0.5) to control the opacity */
 }
 
 .faq-insure-text {

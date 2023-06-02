@@ -5,6 +5,30 @@
 
     <!--====== Title ======-->
     <title>Al Mulla Insurance Brokerage FAQ</title>
+    <meta
+      name="description"
+      content="Welcome to Al Mulla Insurance Brokerage, 
+    your trusted insurance partner in Kuwait. With a strong reputation 
+    for excellence and a commitment to customer satisfaction, we specialize
+    in delivering top-notch insurance solutions to meet the diverse needs 
+    of our clients,insurance, car insurance, quote on cars, quote insurance, 
+    insurance companies, car insurance companies, car insurance company, 
+    best car insurance, insurance broker, quote on car insurance, co 
+    insurance, vehicle insurance, best insurance companies, best car insurance
+    companies, motor insurance, quote online insurance, insurance car policy, 
+    insurance policy, get quote for car insurance, best insurance quote on 
+    car insurance online, get a quote on insurance online, insurance premium 
+    on car insurance, car insurance, broker insurance coverage company insurance 
+    best quotes car insurance, business insurance, quote get quote for car insurance,
+    online car business insurance, business insurance company providers insurance, 
+    insurance companies, l car insurance coverage ,the personal insurance, insurance
+    groups provident, insurance, insurance providers, insurance co, insurance quote 
+    on vehicle, car insurance providers, online insurance companies, car insurance 
+    app, car insurance company online, get insurance which best car insurance, insurance
+    services, insurance office company, car insurance, insurance app quote for motor insurance,
+    insurance companies in us, insurance insurers, best car insurance coverage vehicle, insurance
+    company"
+    />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -102,10 +126,10 @@
               <div class="collapse navbar-collapse sub-menu-bar" id="navbarTwo">
                 <ul class="navbar-nav m-auto">
                   <!-- <li class="nav-item active"><a class="page-scroll" href="#home">HOME</a></li> -->
-                  <li class="nav-item"><a class="page-scroll" href="index.html">ABOUT</a></li>
-                  <li class="nav-item"><a class="page-scroll" href="index.html"> PARTNERS</a></li>
-                  <li class="nav-item"><a class="page-scroll" href="service.html"> SERVICES</a></li>
-                  <li class="nav-item"><a class="page-scroll" href="index.html">FEATURES </a></li>
+                  <li class="nav-item"><a class="page-scroll" href="index.html#about">ABOUT</a></li>
+                  <li class="nav-item"><a class="page-scroll" href="index.html#partners"> PARTNERS</a></li>
+                  <li class="nav-item"><a class="page-scroll" href="service.html#services"> SERVICES</a></li>
+                  <li class="nav-item"><a class="page-scroll" href="index.html#App-features">FEATURES </a></li>
                   <li class="nav-item active"><a class="page-scroll" href="#faq">FAQS</a></li>
                   <li class="nav-item"><a class="page-scroll" href="#contact-us">CONTACT</a></li>
                   <li class="nav-item"><a class="page-scroll" href="../AMIB-pre-login-arabic/index.html">العربية</a></li>
@@ -147,7 +171,7 @@
               <div id="box" class="form-box">
                 <form action="" id="form">
                   <div>
-                    <p><input id="datetimeFieldTime" class="date" type="datetime-local" placeholder="username" /></p>
+                    <p><input id="faqdate" class="date" type="datetime-local" name="datetime" placeholder="Select date and time" required /></p>
                   </div>
                   <div class="searchbox-wrap">
                     <input type="text" placeholder="Please Enter Number" />
@@ -169,9 +193,9 @@
     <!--====== FAQ PART START ======-->
 
     <section id="faq" class="about-area">
-      <div>
-        <img class="img-fluid" src="assets/images/faq_background.png" alt="" />
-      </div>
+      <!-- <div>
+        <img class="img-fluid" src="assets/images/faq_background.png" alt="images" />
+      </div> -->
       <div class="container faq-container d-flex justify-content-center">
         <div class="row">
           <div id="faqContent" class="col-lg-12">
@@ -180,10 +204,10 @@
             <!-- <div class="features-title-icon col-md-12 pt-20">
               <input id="searchInput" type="text" class="search-faq" placeholder="How can we help you?" />
             </div> -->
-            <form class="form-search" method="get" action="#">
+            <form class="form-search">
               <div id="searchResults"></div>
               <input id="searchInput" type="search" name="search" placeholder="How can we help you?" />
-              <button type="submit">Search</button>
+              <button>Search</button>
             </form>
             <div class="faq-content mt-45">
               <div class="about-title d-flex justify-content-center">
@@ -444,7 +468,7 @@
                     <div class="col-md-12">
                       <div class="form-input mt-0">
                         <div class="input-items default">
-                          <input name="name" type="text" placeholder="Name" />
+                          <input name="name" type="text" placeholder="Name*" />
                           <i class="lni lni-user"></i>
                         </div>
                       </div>
@@ -453,7 +477,7 @@
                     <div class="col-md-12">
                       <div class="form-input mt-25">
                         <div class="input-items default">
-                          <input type="email" name="email" placeholder="Email" />
+                          <input type="email" name="email" placeholder="Email*" />
                           <i class="lni lni-envelope"></i>
                         </div>
                       </div>
@@ -462,7 +486,7 @@
                     <div class="col-md-12">
                       <div class="form-input mt-25">
                         <div class="input-items default">
-                          <input type="tel" name="email" placeholder="Phone Number" />
+                          <input type="tel" name="email" placeholder="Phone Number*" />
                           <i class="lni lni-phone"></i>
                         </div>
                       </div>
@@ -471,7 +495,7 @@
                     <div class="col-md-12">
                       <div class="form-input mt-25">
                         <div class="input-items default">
-                          <textarea name="message" placeholder="Message"></textarea>
+                          <textarea name="message" placeholder="Message*"></textarea>
                           <i class="lni lni-pencil-alt"></i>
                         </div>
                       </div>
@@ -538,6 +562,26 @@
     <!--====== Jquery js ======-->
     <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
     <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+
+    <script>
+      // Get the input field element by its class name
+      var datetimeFieldTimeFaq = document.getElementById("faqdate")
+
+      // Function to format the current date and time
+      function getCurrentDateTime() {
+        var now = new Date()
+        var year = now.getFullYear()
+        var month = String(now.getMonth() + 1).padStart(2, "0")
+        var day = String(now.getDate()).padStart(2, "0")
+        var hours = String(now.getHours()).padStart(2, "0")
+        var minutes = String(now.getMinutes()).padStart(2, "0")
+
+        return `${year}-${month}-${day}T${hours}:${minutes}`
+      }
+
+      // Set the current date and time as the value of the input field
+      datetimeFieldTimeFaq.value = getCurrentDateTime()
+    </script>
 
     <!--====== Bootstrap js ======-->
     <script src="assets/js/popper.min.js"></script>

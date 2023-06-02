@@ -55,30 +55,23 @@ $(function () {
   //for request a call back Date
   $(".date").val(new Date().toJSON().slice(0, 10))
 
-  // Function to update the date and time in the input fields
-  function updateDateTime() {
-    var currentDateTime = new Date()
-    var year = currentDateTime.getFullYear()
-    var month = (currentDateTime.getMonth() + 1).toString().padStart(2, "0") // Months are zero-based
-    var day = currentDateTime.getDate().toString().padStart(2, "0")
-    var hours = currentDateTime.getHours().toString().padStart(2, "0")
-    var minutes = currentDateTime.getMinutes().toString().padStart(2, "0")
+  // Get the input field element by its class name
+  var datetimeField = document.querySelector(".date")
 
-    // Format the date and time as required for the input fields
-    var formattedDateTime = `${year}-${month}-${day}T${hours}:${minutes}`
+  // Function to format the current date and time
+  function getCurrentDateTime() {
+    var now = new Date()
+    var year = now.getFullYear()
+    var month = String(now.getMonth() + 1).padStart(2, "0")
+    var day = String(now.getDate()).padStart(2, "0")
+    var hours = String(now.getHours()).padStart(2, "0")
+    var minutes = String(now.getMinutes()).padStart(2, "0")
 
-    // Update the value attribute of all input fields with the 'date' class
-    var inputFields = document.getElementsByClassName("date")
-    for (var i = 0; i < inputFields.length; i++) {
-      inputFields[i].value = formattedDateTime
-    }
+    return `${year}-${month}-${day}T${hours}:${minutes}`
   }
 
-  // Update the date and time immediately
-  updateDateTime()
-
-  // Update the date and time every second
-  setInterval(updateDateTime, 1000)
+  // Set the current date and time as the value of the input field
+  datetimeField.value = getCurrentDateTime()
   //for request a call back
 
   $(".request-call").click(function () {
